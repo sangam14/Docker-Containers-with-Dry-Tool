@@ -26,10 +26,17 @@
 - Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
+## Run multiple containers in an interactive and detached mode. 
 
 
+```
+docker pull busybox
+docker pull hello-world
+docker run -t -d busybox
+docker run -t -d hello-world
 
-
+```
+## you will get on screen like this 
 ```
 [node1] (local) root@192.168.0.33 ~
 $ docker pull busybox
@@ -54,6 +61,21 @@ $ docker run -t -d busybox
 [node1] (local) root@192.168.0.33 ~
 $ docker run -t -d hello-world
 7a4198a31f61c380ddbe3b06eeb313da74de3d232727b0325937434900e8be8d
+
+
+```
+## Confirm if the containers are up and running: 
+
+```
+$ docker ps
+
+```
+## You can check the exited containers:
+```
+$ docker ps -a
+```
+## you will get on screen like this 
+```
 [node1] (local) root@192.168.0.33 ~
 $ docker ps
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS      PORTS               NAMES
@@ -63,6 +85,15 @@ $ docker ps -a
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS             PORTS               NAMES
 7a4198a31f61        hello-world         "/hello"            3 minutes ago       Exited (0) 3 minutes ago                       stupefied_tu
 7c96cde9894f        busybox             "sh"                3 minutes ago       Up 3 minutes                                 romantic_greider
+
+```
+# Direct method 
+## if you want to run dry tool directly than use this on magicl command 
+```
+$ docker run -it -v /var/run/docker.sock:/var/run/docker.sock moncho/dry
+```
+## you will get on screen like this 
+```
 [node1] (local) root@192.168.0.33 ~
 $ docker run -it -v /var/run/docker.sock:/var/run/docker.sock moncho/dry
 Unable to find image 'moncho/dry:latest' locally
@@ -74,6 +105,37 @@ Digest: sha256:ad57f88f39fd910cc42e9416594dd2cf92ae561ddd914fd1c333f989a8d5bd4b
 Status: Downloaded newer image for moncho/dry:latest
 
 ```
+# manual method 
+
+# Download the latest version of Dry :
+
+```
+wget https://github.com/moncho/dry/releases/download/v0.9-beta.3/dry-linux-amd64
+
+```
+## Move the file to /usr/local/bin/dry
+
+```
+sudo mv dry-linux-amd64 /usr/local/bin/dry
+
+```
+## Provide the access permissions.
+
+```
+sudo chmod 755 /usr/local/bin/dry
+
+```
+## Check the version of Dry:
+
+```
+dry -v
+
+```
+## Now, run Dry. Type dry in the command and hit [enter]. You should get the similar output where your containers are running.
+
+
+
+for more details https://github.com/moncho/dry
 ## Contributor - 
 
 Sangam biradar - smbiradar14@gmail.com -https://engineitops.github.io 
