@@ -30,6 +30,7 @@
 
 
 
+```
 [node1] (local) root@192.168.0.33 ~
 $ docker pull busybox
 Using default tag: latest
@@ -55,6 +56,7 @@ $ docker run -t -d hello-world
 7a4198a31f61c380ddbe3b06eeb313da74de3d232727b0325937434900e8be8d
 
 
+```
 ## Contributor - 
 
 Sangam biradar - smbiradar14@gmail.com -https://engineitops.github.io 
