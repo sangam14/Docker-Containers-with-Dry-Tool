@@ -28,6 +28,33 @@
 
 
 
+
+
+[node1] (local) root@192.168.0.33 ~
+$ docker pull busybox
+Using default tag: latest
+latest: Pulling from library/busybox
+57c14dd66db0: Pull complete
+Digest: sha256:7964ad52e396a6e045c39b5a44438424ac52e12e4d5a25d94895f2058cb863a0
+Status: Downloaded newer image for busybox:latest
+
+[node1] (local) root@192.168.0.33 ~
+$ docker pull hello-world
+Using default tag: latest
+latest: Pulling from library/hello-world
+1b930d010525: Pull complete
+Digest: sha256:2557e3c07ed1e38f26e389462d03ed943586f744621577a99efb77324b0fe535
+Status: Downloaded newer image for hello-world:latest
+
+[node1] (local) root@192.168.0.33 ~
+$ docker run -t -d busybox
+7c96cde9894fd9ff42d1c3638cad65cf306cb2757b3925a925f4d421a510a79f
+
+[node1] (local) root@192.168.0.33 ~
+$ docker run -t -d hello-world
+7a4198a31f61c380ddbe3b06eeb313da74de3d232727b0325937434900e8be8d
+
+
 ## Contributor - 
 
 Sangam biradar - smbiradar14@gmail.com -https://engineitops.github.io 
