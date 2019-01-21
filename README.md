@@ -88,7 +88,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
 ```
 # Direct method 
-## if you want to run dry tool directly than use this on magicl command 
+## if you want to run dry tool directly than use this one magical command 
 ```
 $ docker run -it -v /var/run/docker.sock:/var/run/docker.sock moncho/dry
 ```
@@ -131,7 +131,7 @@ sudo chmod 755 /usr/local/bin/dry
 dry -v
 
 ```
-## Now, run Dry. Type dry in the command and hit [enter]. You should get the similar output where your containers are running.
+Now, run Dry. Type dry in the command and hit [enter]. You should get the similar output where your containers are running.
 
 
 
