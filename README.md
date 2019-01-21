@@ -117,8 +117,6 @@ Use the navigation keys mentioned below to interact with the terminal.
 ```
 
 ## Select any container from the list and hit [enter] to open the options:
-## you will get on screen like this 
-![](https://github.com/sangam14/Docker-Containers-with-Dry-Tool/blob/master/pic2.png)
 ```
 Fetch logs
 Inspect container
@@ -130,6 +128,9 @@ Stats + Top
 Stop
 
 ```
+## you will get on screen like this 
+![](https://github.com/sangam14/Docker-Containers-with-Dry-Tool/blob/master/pic2.png)
+
 
 
 ## 2.Interacting with Docker images:
@@ -138,7 +139,7 @@ Stop
 
 ## Press [2] to switch to Docker images. It will show a list of your Docker images.
 ## Select any image from the list and hit [enter] to show the details of the selected image.
-You can use the shortcuts in Dry:
+You can use the shortcuts in Dry:<br>
 “Ctrl + D” to remove dangling. It is equivalent to docker volume rm with the flag dangling=true <br>
 “Ctrl + E” to remove image. It is equivalent to docker rmi. <br>
 “CTRL + F” to force remove. It is equivalent to docker rmi --force <br>
