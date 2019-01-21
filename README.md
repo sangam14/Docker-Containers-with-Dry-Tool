@@ -105,6 +105,36 @@ Digest: sha256:ad57f88f39fd910cc42e9416594dd2cf92ae561ddd914fd1c333f989a8d5bd4b
 Status: Downloaded newer image for moncho/dry:latest
 
 ```
+
+
+## Interacting with Docker Containers:
+Use the navigation keys mentioned below to interact with the terminal.
+
+```
+[H]:Help [Q]:Quit | [F1]:Sort [F2]:Toggle Show Containers [F5]:Refresh [%]:Filter |
+[m]:Monitor mode [2]:Images [3]:Networks [4]:Nodes [5]:Services | [Enter]:Commands 
+
+```
+
+## Select any container from the list and hit [enter] to open the options:
+
+```
+Fetch logs
+Inspect container
+Kill container
+Remove container
+Restart
+Show image history
+Stats + Top
+Stop
+
+```
+## you will get on screen like this 
+
+
+
+
+
 # manual method 
 
 # Download the latest version of Dry :
@@ -132,6 +162,9 @@ dry -v
 
 ```
 Now, run Dry. Type dry in the command and hit [enter]. You should get the similar output where your containers are running.
+![](https://github.com/sangam14/Docker-Containers-with-Dry-Tool/blob/master/Picture1.png)
+
+
 
 
 
