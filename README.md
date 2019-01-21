@@ -54,14 +54,17 @@ $ docker run -t -d busybox
 [node1] (local) root@192.168.0.33 ~
 $ docker run -t -d hello-world
 7a4198a31f61c380ddbe3b06eeb313da74de3d232727b0325937434900e8be8d
-
+[node1] (local) root@192.168.0.33 ~
+$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS      PORTS               NAMES
+7c96cde9894f        busybox             "sh"                3 minutes ago       Up 3 minutes                          romantic_greider
 [node1] (local) root@192.168.0.33 ~
 $ docker ps -a
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS             PORTS               NAMES
 7a4198a31f61        hello-world         "/hello"            3 minutes ago       Exited (0) 3 minutes ago                       stupefied_tu
 7c96cde9894f        busybox             "sh"                3 minutes ago       Up 3 minutes                                 romantic_greider
 [node1] (local) root@192.168.0.33 ~
-
+$
 ```
 ## Contributor - 
 
