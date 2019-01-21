@@ -152,7 +152,7 @@ You can use the shortcuts in Dry:<br>
 
 # manual method 
 
-# Download the latest version of Dry :
+## Download the latest version of Dry :
 
 ```
 wget https://github.com/moncho/dry/releases/download/v0.9-beta.3/dry-linux-amd64
