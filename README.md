@@ -64,7 +64,15 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 7a4198a31f61        hello-world         "/hello"            3 minutes ago       Exited (0) 3 minutes ago                       stupefied_tu
 7c96cde9894f        busybox             "sh"                3 minutes ago       Up 3 minutes                                 romantic_greider
 [node1] (local) root@192.168.0.33 ~
-$
+$ docker run -it -v /var/run/docker.sock:/var/run/docker.sock moncho/dry
+Unable to find image 'moncho/dry:latest' locally
+latest: Pulling from moncho/dry
+4fe2ade4980c: Pull complete
+e9c4f9f2a7e3: Pull complete
+28bab79b92a9: Pull complete
+Digest: sha256:ad57f88f39fd910cc42e9416594dd2cf92ae561ddd914fd1c333f989a8d5bd4b
+Status: Downloaded newer image for moncho/dry:latest
+
 ```
 ## Contributor - 
 
